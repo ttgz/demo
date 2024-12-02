@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* General Reset */
+body, h2, h4, p, table {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+
+.header-content nav ul li a {
+    color: rgb(233, 239, 236);
+    text-decoration: none;
+}
+
+.auth button {
+    background: transparent;
+    border: 1px solid rgb(233, 239, 236);
+    color: rgb(233, 239, 236);
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+main {
+    background-color: rgb(196, 218, 210);
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cart {
+    background-color: rgb(233, 239, 236);
+    padding: 20px;
+    border-radius: 8px;
+
+    width: 90vw;
+    margin: 50px auto; /* Căn giữa theo trục ngang và cách đều theo trục dọc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid rgb(196, 218, 210);
+    padding: 10px;
+    text-align: center;
+}
+
+table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: flex-end; /* Đẩy nội dung sang bên phải */
+    gap: 20px; /* Khoảng cách giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.discount input {
+    padding: 5px;
+}
+
+.amount{
+    width: 40px;
+    text-align: center;
+}
+
+.discount button, .checkout {
+    padding: 10px 15px;
+    background-color: rgb(22, 66, 60);
+    color: rgb(233, 239, 236);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Gộp viền giữa các ô */
+    margin-bottom: 20px;
+    border: 1px solid rgb(22, 66, 60); /* Thêm viền 1px cho toàn bảng */
+}
+
+table th, table td {
+    border: 1px solid rgb(22, 66, 60); /* Viền 1px cho từng ô */
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* ---------Responsive Mobile main ------------- */
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .quantity-control input {
+        width: 40px;
+    }
+}
