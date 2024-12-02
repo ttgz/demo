@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Sửa thương hiệu</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <div class="logo">
+                <a href=""><img src="" alt="Logo"></a>
+            </div>
+            <div class="website">
+                <a href=""><i class="fa-solid fa-globe"></i> Website</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="account">
+                <a href=""><i class="fa-regular fa-user"></i> nguyenthuyanhthu</a>
+                <div class="dropbox">
+                    <p><a href="">Trang cá nhân</a></p>
+                    <p><a href="">Đăng xuất</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div class="active"><a href="">Trang Dashboard</a></div>
+            <div><a href="">Quản lý Danh mục</a></div>
+            <div><a href="">Quản lý Sản phẩm</a></div>
+            <div><a href="">Quản lý Đơn hàng</a></div>
+            <div><a href="">Quản lý Thống kê</a></div>
+            <div><a href="">Quản lý Đánh giá</a></div>
+            <div><a href="">Quản lý Liên hệ</a></div>
+        </div>
+        <div class="main">
+            <div class="separator"></div>
+            <div class="content">
+                <div class="head">
+                    <div class="title">Thêm thương hiệu</div>
+                </div>
+                <div class="btn-goback">
+                    <button type="button" style=" height: 30px;">&laquo; Trở lại</button>
+                </div>
+                <div class="separator_x">
+                    <div class="row">
+                        <form action="" id="formAddCategory">
+                            <div class="form-group">
+                                <label>Tên thương hiệu:</label>
+                                <input type="text" class="form-control" id="nameBrand">
+                            </div>
+                            <div class="form-group">
+                                <label>Tên phân loại:</label>
+                                <input type="text" class="form-control" id="nameCategory">       
+                            </div>
+                            <div class="form-group">
+                                <label>Trạng thái:</label>
+                                <input type="text" class="form-control" id="status">       
+                            </div>
+                        </form>
+                        <div class="btn-goback">
+                            <button type="button" style="height: 30px;">Xác nhận</button>
+                            <button type="button" style="height: 30px;">Hủy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const menu = document.querySelectorAll('.menu div');
+    menu.forEach(item => {
+        item.addEventListener('click', () => {
+            menu.forEach(m => m.classList.remove('active'))
+            item.classList.add('active')
+        })
+    })
+</script>
+
+</html>

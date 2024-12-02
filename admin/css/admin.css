@@ -1,0 +1,271 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(215, 229, 232);
+    color: rgb(19, 93, 102);
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(19, 93, 102);
+    border-radius: 4px;
+}
+
+.header a {
+    color: rgb(255, 255, 255);
+}
+
+.left {
+    display: flex;
+}
+
+.left>div {
+    margin: 24px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.right {
+    display: flex;
+    float: right;
+}
+
+.right>div {
+    margin: 24px;
+}
+
+.account {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbox {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+.dropbox>p {
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.dropbox>p>a {
+    color: rgb(19, 93, 102);
+}
+
+.dropbox>p:hover {
+    border-bottom: 1px solid rgb(19, 93, 102);
+}
+
+.account:hover .dropbox {
+    display: block;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    width: 248px;
+    margin: 24px;
+    text-align: center;
+}
+
+.menu a {
+    color: rgb(19, 93, 102);
+}
+
+.menu div {
+    background-color: rgb(215, 229, 232);
+    color: rgb(19, 93, 102);
+    padding: 12px;
+    margin: 2px 0px;
+    border-radius: 4px;
+    border: 1px solid rgb(19, 93, 102);
+}
+
+.menu div.active {
+    background-color: rgb(19, 93, 102);
+    color: rgb(255, 255, 255);
+}
+
+.menu div.active a {
+    color: rgb(255, 255, 255);
+}
+
+.separator {
+    background-color: rgb(19, 93, 102);
+    width: 1px;
+}
+
+.separator_x {
+    background-color: rgb(19, 93, 102);
+    margin-bottom: 12px;
+    height: 1px;
+}
+
+.main {
+    display: flex;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.content {
+    margin: 0px 24px;
+    width: 100%;
+}
+
+.content a {
+    color: rgb(19, 93, 102);
+}
+
+.content button {
+    background-color: rgb(19, 93, 102);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head>button {
+    margin: 12px;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.title {
+    margin: 12px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.search {
+    margin: 12px;
+}
+
+.search>input {
+    padding: 10px;
+    width: 248px;
+}
+
+.search>button {
+    padding: 12px;
+    border-radius: 4px;
+}
+
+.content select {
+    background-color: rgb(19, 93, 102);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    margin-bottom: 12px;
+    width: 130px;
+    text-align: center;
+    border-radius: 4px;
+    float: right;
+}
+
+.content option {
+    background-color: rgb(215, 229, 232);
+    color: rgb(19, 93, 102);
+    text-align: left;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.tabs div {
+    background-color: rgb(215, 229, 232);
+    color: rgb(19, 93, 102);
+    padding: 8.5px 12px;
+    margin-right: 4px;
+    border-radius: 4px;
+    border: 1px solid rgb(19, 93, 102);
+}
+
+.tabs div.active {
+    background-color: rgb(19, 93, 102);
+    color: rgb(255, 255, 255);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr th {
+    background-color: rgb(19, 93, 102);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid rgb(215, 229, 232);
+}
+
+table tr td {
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border: 1px solid rgb(19, 93, 102);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    background-color: rgb(215, 229, 232);
+    color: rgb(19, 93, 102);
+    padding: 10px 15px;
+    margin: 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: rgb(19, 93, 102);
+    color: rgb(215, 229, 232);
+}
+
+.pagination a.active {
+    background-color: rgb(19, 93, 102);
+    color: rgb(215, 229, 232);
+}
+
+.btn-height{
+    height: 30px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input {
+    width: 60vw;
+    margin-top: 0.5rem;
+    height: 25px;
+}
+.btn-goback {
+    display: flex;
+    justify-content: flex-start;
+}
+.btn-goback button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 1rem 1rem 0;
+}

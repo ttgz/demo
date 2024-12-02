@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Sinh viên nghiêm túc</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <div class="logo">
+                <a href=""><img src="" alt="Logo"></a>
+            </div>
+            <div class="website">
+                <a href=""><i class="fa-solid fa-globe"></i> Website</a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="account">
+                <a href=""><i class="fa-regular fa-user"></i> nguyenthuyanhthu</a>
+                <div class="dropbox">
+                    <p><a href="">Trang cá nhân</a></p>
+                    <p><a href="">Đăng xuất</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="menu">
+            <div class="active"><a href="">Trang Dashboard</a></div>
+            <div><a href="">Quản lý Danh mục</a></div>
+            <div><a href="">Quản lý Sản phẩm</a></div>
+            <div><a href="">Quản lý Đơn hàng</a></div>
+            <div><a href="">Quản lý Thống kê</a></div>
+            <div><a href="">Quản lý Đánh giá</a></div>
+            <div><a href="">Quản lý Liên hệ</a></div>
+        </div>
+        <div class="main">
+            <div class="separator"></div>
+            <div class="content">
+                <div class="head">
+                    <div class="title">Tiêu đề</div>
+                </div>
+                <div class="separator_x"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const menu = document.querySelectorAll('.menu div');
+    menu.forEach(item => {
+        item.addEventListener('click', () => {
+            menu.forEach(m => m.classList.remove('active'))
+            item.classList.add('active')
+        })
+    })
+</script>
+
+</html>
