@@ -85,26 +85,22 @@ table img {
     align-items: center; /* Căn giữa theo chiều dọc */
 }
 
-.discount input {
-    padding: 5px;
-}
+
 
 .amount{
-    width: 40px;
+    width: 50px;
     text-align: center;
 }
 
-.discount button, .checkout {
+
+.checkout {
+    font-size: 16px;
+    font-weight: bold;
     padding: 10px 15px;
     background-color: rgb(22, 66, 60);
     color: rgb(233, 239, 236);
     border-radius: 5px;
     cursor: pointer;
-}
-
-.checkout {
-    font-size: 16px;
-    font-weight: bold;
 }
 
 table {
@@ -121,7 +117,7 @@ table th, table td {
 }
 
 
-/* ---------Responsive Mobile main ------------- */
+/* --------- responsive Mobile shopping cart ------------- */
 @media (max-width: 768px) {
     .cart-item {
         flex-direction: column;
@@ -135,5 +131,14 @@ table th, table td {
 
     .quantity-control input {
         width: 40px;
+    }
+    .cart{
+        height: 90vh;
+    }
+    
+    .cart-footer{
+        display: flex;
+        justify-content: flex-end; 
+        align-items: flex-start; 
     }
 }
